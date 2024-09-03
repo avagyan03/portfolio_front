@@ -2,7 +2,6 @@
 
 import "./language/index.js";
 
-const url = "http://localhost:1337"
 
 // async function fetchProducts(url) {
 // 	return url
@@ -11,24 +10,9 @@ const url = "http://localhost:1337"
 
 // fetchProducts("text").then((data) => console.log(data)
 // )
-const loading = document.querySelector(".loading");
+export const loading = document.querySelector(".loading");
 
-fetch(url + "/api/hero")
 
-	.then((res) => res.json())
-
-	.then((data) => {
-
-		console.log(data)
-
-	})
-
-	.catch((error) => console.warn(error))
-	.finally(() => {
-
-		loading.remove()
-
-	})
 
 
 

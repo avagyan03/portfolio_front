@@ -1,5 +1,5 @@
 // import { langList } from "./langlist.js";
-import { slider } from "../index.js";
+import { slider,loading } from "../index.js";
 
 const buttonru = document.querySelectorAll(".language__button_ru");
 const buttoneng = document.querySelectorAll(".language__button_eng");
@@ -131,6 +131,9 @@ function change(curent) {
 
 					})
 					.catch((error) => console.log(error))
+					.finally(() => {
+						loading.remove();
+					})
 
 
 				abzorver.unobserve(entri.target);
