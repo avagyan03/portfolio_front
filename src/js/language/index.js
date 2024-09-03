@@ -47,7 +47,11 @@ function change(curent) {
 								entri.target.querySelector(".hero__img").src = data.img_mobile.url
 								entri.target.querySelector(".hero__picture source").srcset = data.img_desktop.url
 								break;
+								case 'about':
+									entri.target.querySelector(".about__text").textContent = data.text
+									entri.target.querySelector(".about__title").textContent = data.title
 
+									break;
 
 							case "skills":
 
