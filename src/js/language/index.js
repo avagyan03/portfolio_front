@@ -32,8 +32,6 @@ function change(curent) {
 
 						switch (entri.target.dataset.language) {
 							case "header":
-								console.log(data);
-
 								entri.target.querySelector(".nav__list").innerHTML = "";
 								data.links.forEach(obj => {
 
@@ -52,7 +50,6 @@ function change(curent) {
 
 
 							case "skills":
-								console.log(data);
 
 								entri.target.innerHTML = "";
 								data?.forEach(skill => {
@@ -84,11 +81,10 @@ function change(curent) {
 
 									`;
 								})
-								// reating()
+								rating()
 								break;
 
 							case 'contack':
-								console.log(data);
 								entri.target.querySelector(".contacts__title").textContent = data.title;
 								entri.target.querySelector(".contacts__text").textContent = data.text;
 								entri.target.querySelector(".contacts__button").textContent = data.buttontext;
@@ -96,13 +92,11 @@ function change(curent) {
 								break;
 
 							case "skillhed":
-								console.log(data);
 								entri.target.querySelector(".skills__title").textContent = data.title;
 								entri.target.querySelector(".skills__text").innerHTML = data.text;
 								break;
 
 							case "portfolios":
-								console.log(data);
 								data?.forEach(portflio => {
 									entri.target.innerHTML += `
 										<li class="slider__slide portfolio__slide container">
@@ -115,7 +109,6 @@ function change(curent) {
 								break;
 
 							case "form":
-								console.log(data);
 								entri.target.querySelector(".form__input_name").placeholder = data.name;
 								entri.target.querySelector(".form__input_email").placeholder = data.email;
 								entri.target.querySelector(".form__input_phone").placeholder = data.phone;
@@ -178,7 +171,7 @@ buttoneng.forEach((button, index) => {
 	})
 })
 
-function reating() {
+function rating() {
 	document.querySelectorAll("[data-rating]").forEach(item => {
 		const value = item.dataset.rating
 		item.querySelectorAll("path").forEach((path, index) => {
