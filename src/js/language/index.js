@@ -48,8 +48,8 @@ function change(curent) {
 								entri.target.querySelector(".hero__picture source").srcset = data.img_desktop.url
 								break;
 								case 'about':
-									entri.target.querySelector(".about__text").textContent = data.text
-									entri.target.querySelector(".about__title").textContent = data.title
+									entri.target.querySelector(".about__text").innerHTML = data.text
+									entri.target.querySelector(".about__title").innerHTML = data.title
 
 									break;
 
