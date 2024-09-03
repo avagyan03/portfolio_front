@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.min.css">
+    <title>Portfolio</title>
+    <style>
+		.loading {
+			position: fixed;
+			inset: 0;
+			background-color:rgba(0,0,0,0.5) ;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			z-index: 9999;
+
+
+		}
+
+
+
+		.loading__spinner{
+			width: 48px;
+			height: 48px;
+			border: 5px solid red;
+			border-bottom-color: transparent;
+			border-radius: 50%;
+			display: inline-block;
+			box-sizing: border-box;
+			animation: rotation 1s linear infinite;
+		}
+		@keyframes rotation {
+			0% {
+				transform: rotate(0deg);
+			}
+
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+	</style>
+</head>
+
+<body class="page__body">
+    <header class="header" data-language="header">
+    <div class="header__container container">
+        <nav class="nav " data-nav title="navigation" aria-label="navigation list links">
+            <ul class="nav__list">
+                <!-- <li class="nav__item" data-nav-item><a href="#home" class="nav__link link title" data-lang="header-Home"> Home</a>
+				</li>
+				<li class="nav__item" data-nav-item><a href="#about" class="nav__link link title"
+						data-lang="header-AboutMe">About
+						Me</a></li>
+				<li class="nav__item" data-nav-item><a href="#skills" class="nav__link link title"
+						data-lang="header-Skills">Skills</a></li>
+				<li class="nav__item" data-nav-item><a href="#portfolio" class="nav__link link title"
+						data-lang="header-Portfolio">Portfolio</a></li>
+				<li class="nav__item" data-nav-item><a href="#contacts" class="nav__link link title"
+						data-lang="header-Contacs">Contacts</a></li> -->
+
+            </ul>
+            <div class="language nav__language">
+                <button class="language__button button-reset language__button_ru">RU</button>
+                <span class="language__vertrical-line"></span>
+                |
+                <button class="language__button  button-reset language__button_eng">ENG</button>
+            </div>
+        </nav>
+    </div>
+</header>
+    <main class="main">
+        <div class="loading">
+            <span class="loading__spinner" style="font-size: 36px;"></span>
+        </div>
+
+        <h1 class="visually-hidden">Portfolio Denis Novik</h1>
+        <section class="hero" data-language="hero">
+    <div class="hero__container container">
+        <div class="hero__content">
+            <div class="hero__name-wrapper">
+                <h2 class="hero__title">
+                    <span class="hero__name" data-lang="hero-name">Denis</span>
+                    <span class="hero__lastname" data-lang="hero-lastname">Novik</span>
+                </h2>
+                <button class="burger hero__burger" aria-label="open menu" aria-expanded="false" data-burger>
+                    <span class="burger__line burger__line_top"></span>
+                    <span class="burger__line burger__line_middle"></span>
+                    <span class="burger__line burger__line_bottom"></span>
+                </button>
+            </div>
+            <p class="hero__descr" data-lang="hero-texttext">
+            I am frontend developer
+                21 years
+                old, Erevan
+            </p>
+            <div class="language hero__language">
+                <button class="language__button button-reset language__button_ru">RU</button>
+                <span class="language__vertrical-line"></span>
+                |
+                <button class="language__button  button-reset language__button_eng">ENG</button>
+            </div>
+        </div>
+        <picture class="hero__picture">
+            <source media="(min-width:480px)" srcset="img/BSPP2266.png">
+            <img class="hero__img" src="img/hero-mobile.jpg" alt="">
+        </picture>
+
+    </div>
+</section>
+        <section class="about" id="about" data-language="about">
+    <div class="container about__container">
+        <div class="about__content">
+            <h2 class="about__title title" data-lang="about-title"></h2>
+            <div class="about__text"></div>
+        </div>
+    </div>
+</section>
+        <section class="skills" data-language="skillhed" id="skills">
+    <div class="container skills__container">
+        <h2 class="skills__title title" data-lang="skills-title">Skills</h2>
+        <p class="skills__text" data-lang="skills-text">I work in such programs as</p>
+        <ul class="skills__list list-reset" data-language="skills">
+        </ul>
+        </div>
+
+</section>
+        <section class="portfolio" id="portfolio" data-language="portfoliohed">
+    <div class="portfolio__container">
+        <h2 class="portfolio__title title" data-lang="portfolio-title">Portfolio</h2>
+        <div class="portfolio__slider slider" data-slider="portfolio">
+            <ul class="slider__list portfolio__list" data-language="portfolios">
+                <!-- <li class="slider__slide  portfolio__slide container">
+					<picture><source srcset="img/portfolio/wumen.webp" type="image/webp"><img class="portfolio__img" src="img/portfolio/wumen.jpg" alt=""></picture>
+					<a class="portfolio__slide-title" href="#">Online fashion store - Homepage</a>
+				</li>
+				<li class="slider__slide  portfolio__slide">
+					<picture><source srcset="img/portfolio/wumenn.webp" type="image/webp"><img class="portfolio__img" src="img/portfolio/wumenn.jpg" alt=""></picture>
+
+					<a class="portfolio__slide-title" href="#">Reebok Store - Concept</a>
+				</li>
+				<li class="slider__slide  portfolio__slide">
+					<picture><source srcset="img/portfolio/wumennn.webp" type="image/webp"><img class="portfolio__img" src="img/portfolio/wumennn.jpg" alt=""></picture>
+
+					<a class="portfolio__slide-title" href="#">Braun Landing Page - Concept</a>
+				</li>
+				<li class="slider__slide  portfolio__slide">
+					<picture><source srcset="img/portfolio/wumen.webp" type="image/webp"><img class="portfolio__img" src="img/portfolio/wumen.jpg" alt=""></picture>
+
+					<a class="portfolio__slide-title" href="#">Online fashion store - Homepage</a>
+				</li>
+				<li class="slider__slide  portfolio__slide">
+					<picture><source srcset="img/portfolio/wumenn.webp" type="image/webp"><img class="portfolio__img" src="img/portfolio/wumenn.jpg" alt=""></picture>
+
+					<a class="portfolio__slide-title" href="#">Reebok Store - Concept</a>
+				</li>
+				<li class="slider__slide  portfolio__slide">
+					<picture><source srcset="img/portfolio/wumen.webp" type="image/webp"><img class="portfolio__img" src="img/portfolio/wumen.jpg" alt=""></picture>
+
+					<a class="portfolio__slide-title" href="#">Braun Landing Page - Concept</a>
+				</li> -->
+            </ul>
+            <button class="slider__button slider__button_prev">
+                <svg class="slider__button-icon">
+                    <use xlink:href="img/svg/sprite.svg#slider-arrow" />
+                </svg>
+            </button>
+            <button class="slider__button slider__button_next">
+                <svg class="slider__button-icon slider__button-icon_next">
+                    <use xlink:href="img/svg/sprite.svg#slider-arrow" />
+                </svg>
+            </button>
+        </div>
+</section>
+        <section class="contacts" id="contacts" data-language="contack">
+    <div class="contacts__container container">
+        <div class="contacts__content">
+            <h2 class="contacts__title title" data-lang="contacts-title">
+                Contacts
+            </h2>
+            <p class="contacts__text text" data-lang="contacts-content">Want to know more or just chat?<br>
+                You are welcome!
+            </p>
+            <button class="contacts__button button-reset">
+                Send message
+            </button>
+            <ul class="social" title="" aria-label="social list links">
+                <li class="social__item">
+                    <a href="#" target="_blank" class="social__link social__link_fb" aria-label="Our Facebook page">
+
+                    </a> <svg class="social__icon">
+                        <use xlink:href="img/svg/sprite.svg#facebook"></use>
+                    </svg>
+                </li>
+                <li class="social__item">
+                    <a href="#" target="_blank" class="social__link social__link_vk" aria-label="Our vkontakte page">
+
+                    </a> <svg class="social__icon">
+                        <use xlink:href="img/svg/sprite.svg#yutub"></use>
+                    </svg>
+                </li>
+                <li class="social__item">
+                    <a href="#" target="_blank" class="social__link social__link_tw" aria-label="Our twitter page">
+                        <svg class="social__icon">
+                            <use xlink:href="img/svg/sprite.svg#instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <p class="contacts__page" data-lang="contacts-page">Like me on <br>
+                LinkedIn, Instagram, Behance, Dribble</p>
+        </div>
+    </div>
+
+</section>
+
+    </main>
+    <!-- <footer class="footer" data-language="footer">
+  <div class="footer__container container">
+    footer
+  </div>
+</footer> -->
+    <div class="popap" data-language="form">
+    <div class="popap__content">
+        <button class="popap__button-close">X</button>
+        <form action="https://api.web3forms.com/submit" method="POST" class="form">
+            <input type="hidden" name="access_key" value="0c78e964-260c-4493-bed3-34a93cb0f76f">
+            <label class="form__label">
+                <input type="text" name="name" class="input-reset form__input form__input_name" placeholder="Name">
+            </label>
+            <label class="form__label">
+                <input type="email" name="name" class="input-reset form__input   form__input_email" placeholder="Email">
+
+            </label>
+            <label class="form__label">
+                <input type="tel" name="name" class="input-reset form__input  form__input_phone" placeholder="Phone">
+            </label>
+
+            <label class="form__label">
+                <input type="tel" name="message" class="input-reset form__input  form__input_message" placeholder="Message">
+            </label>
+
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+            <input type="hidden" name="redirect" value="http://localhost:3000">
+
+            <button class="button-reset form__buttton form__button_send">send</button>
+        </form>
+    </div>
+</div>
+    <script src="js/index.min.js"></script>
+</body>
+
+</html>

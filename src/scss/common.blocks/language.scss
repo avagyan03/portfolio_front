@@ -1,0 +1,48 @@
+.language {
+	text-orientation: mixed;
+	writing-mode: vertical-lr;
+	transform: rotate(180deg);
+	white-space: nowrap;
+
+
+
+	// .language__button
+	&__vertical-line {
+		font-size: 18px;
+
+
+	}
+
+	&__button {
+		font-size: inherit;
+		transition: transform 0.3s, color 0.3s;
+
+		&:hover {
+			transform: scale(1.2);
+			color: var(--light--color);
+		}
+
+		&:hover {
+			transform: scale(1.2);
+			color: var(--main-color);
+		}
+
+		&_active {
+			transform: scale(1.2);
+			color: var(--main-color);
+		}
+	}
+
+	// .language__button_ru
+
+
+	&_ru {}
+
+
+	// .language__button_eng
+
+	&_eng {}
+
+}
+
+.button-reset {}

@@ -1,0 +1,53 @@
+.portfolio {
+	padding: 80px 0px 110px;
+	background-color: var(--background-color);
+	// .portfolio__container
+
+	&__container {}
+
+	// .portfolio__title
+
+	&__title {
+		text-align: center;
+		margin-bottom: 60px;
+		font-size: 34px;;
+	}
+
+	// .portfolio__silder
+
+	&__slider {
+		max-width: 1100px;
+		margin:  0 auto;
+		padding: 0 15px;
+	}
+
+	// .portfolio__slide
+
+	&__slide {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 0 40px;;
+	}
+
+	&__list {
+		margin: 0 auto;
+		// padding: 0 15px ;
+	}
+
+	// .portfolio__img
+
+	&__img {
+		margin-bottom: 10px;
+		max-width: 100%;
+
+	}
+
+	// .portfolio__slide-title
+
+	&__slide-title {}
+}
+
+.container {}
+
+.title {}
