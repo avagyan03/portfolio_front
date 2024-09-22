@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/index.min.css">
+	<title>Portfolio</title>
+	<style>
+		.loading {
+			position: fixed;
+			inset: 0;
+			background-color:rgba(0,0,0,0.5) ;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			z-index: 9999;
+
+
+		}
+
+
+
+		.loading__spinner{
+			width: 48px;
+			height: 48px;
+			border: 5px solid red;
+			border-bottom-color: transparent;
+			border-radius: 50%;
+			display: inline-block;
+			box-sizing: border-box;
+			animation: rotation 1s linear infinite;
+		}
+		@keyframes rotation {
+			0% {
+				transform: rotate(0deg);
+			}
+
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+	</style>
+</head>
+
+<body class="page__body">
+	@include('./common.blocks/header.html')
+	<main class="main">
+		<div class="loading">
+			<span class="loading__spinner" style="font-size: 36px;"></span>
+		</div>
+
+		<h1 class="visually-hidden">Portfolio Denis Novik</h1>
+		@include('./common.blocks/hero.html')
+		@include('./common.blocks/about.html')
+		@include('./common.blocks/skills.html')
+		@include('./common.blocks/portfolio.html')
+		@include('./common.blocks/contacts.html')
+
+	</main>
+	@include('./common.blocks/footer.html')
+	@include('./common.blocks/popap.html')
+	<script src="js/index.min.js"></script>
+</body>
+
+</html>

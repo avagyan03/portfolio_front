@@ -1,0 +1,87 @@
+.contacts {
+	// list-style: none;
+
+	// &__contacts__page {
+	// 	opacity: 0.5;
+	// }
+
+	// .contacts__containere
+	&__content {
+		text-align: center;
+	}
+
+	&__container {}
+
+	// .contacts__title
+
+	&__title {
+		text-align: center;
+		font-size: 34px;
+		margin-top: 30px;
+	}
+
+	// .contacts__text
+
+	&__text {
+		text-align: center;
+		margin-bottom: 30px;
+		margin-top: 20px;
+		// opacity: 0.5;
+	}
+
+
+	// .contacts__button
+
+	&__button {
+		width: 150px;
+		height: 30px;
+		border-radius: 15px;
+		margin-bottom: 30px;
+		background: black;
+		color: white;
+	}
+}
+
+
+.social {
+	display: flex;
+	padding: 0px;
+	justify-content: center;
+	gap: 50px;
+	margin-top: 5px;
+
+
+
+	// .social__item
+
+	&__item {
+		list-style: none;
+
+	}
+
+	// .social__link
+
+	&__link {
+
+
+		// .social__link_fb
+
+		&_fb {}
+
+		// .social__link_vk
+
+		&_vk {}
+
+		// .social__link_tw
+
+		&_tw {}
+	}
+
+	// .social__icon
+
+	&__icon {
+		width: 70px;
+		height: 40px;
+		list-style: none;
+	}
+}
